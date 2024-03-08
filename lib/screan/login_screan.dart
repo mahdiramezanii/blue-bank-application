@@ -1,3 +1,4 @@
+import "package:blue_bank_application/screan/home_srean.dart";
 import "package:flutter/material.dart";
 
 class LoginScrean extends StatefulWidget {
@@ -11,6 +12,7 @@ class _LoginScreanState extends State<LoginScrean> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         body: Column(
           children: [
             Row(
@@ -31,56 +33,54 @@ class _LoginScreanState extends State<LoginScrean> {
                 child: Image.asset("assets/images/blu.png"),
               ),
             ),
-            widget(
-              child: Container(
-                margin: EdgeInsets.all(10),
-                width: double.infinity,
-                height: 120,
-                decoration: BoxDecoration(
-                    color: const Color.fromRGBO(230, 230, 230, 1),
-                    borderRadius: BorderRadius.circular(15),
-                    border: _selectedInput == true
-                        ? Border.all(width: 1, color: Colors.blue)
-                        : Border.all(width: 1, color: Colors.transparent)),
-                child: Column(
-                  children: [
-                    TextField(
-                      onTap: () {
-                        setState(() {
-                          _selectedInput = true;
-                        });
-                      },
-                      textAlign: TextAlign.right,
-                      decoration: InputDecoration(
-                        hintText: "نام کاربری خود را وارد کنید",
-                        hintStyle: TextStyle(color: Colors.black, fontSize: 18),
-                        enabledBorder:
-                            UnderlineInputBorder(borderSide: BorderSide.none),
-                        contentPadding: EdgeInsets.symmetric(horizontal: 22),
-                        focusedBorder:
-                            UnderlineInputBorder(borderSide: BorderSide.none),
-                      ),
+            Container(
+              margin: EdgeInsets.all(10),
+              width: double.infinity,
+              height: 120,
+              decoration: BoxDecoration(
+                  color: const Color.fromRGBO(230, 230, 230, 1),
+                  borderRadius: BorderRadius.circular(15),
+                  border: _selectedInput == true
+                      ? Border.all(width: 1, color: Colors.blue)
+                      : Border.all(width: 1, color: Colors.transparent)),
+              child: Column(
+                children: [
+                  TextField(
+                    onTap: () {
+                      setState(() {
+                        _selectedInput = true;
+                      });
+                    },
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(
+                      hintText: "نام کاربری خود را وارد کنید",
+                      hintStyle: TextStyle(color: Colors.black, fontSize: 18),
+                      enabledBorder:
+                          UnderlineInputBorder(borderSide: BorderSide.none),
+                      contentPadding: EdgeInsets.symmetric(horizontal: 22),
+                      focusedBorder:
+                          UnderlineInputBorder(borderSide: BorderSide.none),
                     ),
-                    Divider(endIndent: 30, indent: 30),
-                    TextField(
-                      onTap: () {
-                        setState(() {
-                          _selectedInput = true;
-                        });
-                      },
-                      textAlign: TextAlign.right,
-                      decoration: InputDecoration(
-                        hintText: "رمز عبور خود را وارد کنید",
-                        hintStyle: TextStyle(color: Colors.black, fontSize: 18),
-                        enabledBorder:
-                            UnderlineInputBorder(borderSide: BorderSide.none),
-                        contentPadding: EdgeInsets.symmetric(horizontal: 22),
-                        focusedBorder:
-                            UnderlineInputBorder(borderSide: BorderSide.none),
-                      ),
+                  ),
+                  Divider(endIndent: 30, indent: 30),
+                  TextField(
+                    onTap: () {
+                      setState(() {
+                        _selectedInput = true;
+                      });
+                    },
+                    textAlign: TextAlign.right,
+                    decoration: InputDecoration(
+                      hintText: "رمز عبور خود را وارد کنید",
+                      hintStyle: TextStyle(color: Colors.black, fontSize: 18),
+                      enabledBorder:
+                          UnderlineInputBorder(borderSide: BorderSide.none),
+                      contentPadding: EdgeInsets.symmetric(horizontal: 22),
+                      focusedBorder:
+                          UnderlineInputBorder(borderSide: BorderSide.none),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
             SizedBox(
@@ -93,7 +93,12 @@ class _LoginScreanState extends State<LoginScrean> {
                       borderRadius: BorderRadius.circular(15)),
                   maximumSize: Size(380, 100),
                   minimumSize: Size(10, 60)),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return HomeScrean();
+                }));
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
