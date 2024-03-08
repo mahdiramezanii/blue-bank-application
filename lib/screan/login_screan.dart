@@ -34,7 +34,7 @@ class LoginScrean extends StatelessWidget {
                 TextField(
                   textAlign: TextAlign.right,
                   decoration: InputDecoration(
-                    hintText: "نام کاربری خود را وارد کنید",
+                    hintText: "...نام کاربری خود را وارد کنید",
                     enabledBorder:
                         UnderlineInputBorder(borderSide: BorderSide.none),
                     contentPadding: EdgeInsets.symmetric(horizontal: 22),
@@ -46,7 +46,7 @@ class LoginScrean extends StatelessWidget {
                 TextField(
                   textAlign: TextAlign.right,
                   decoration: InputDecoration(
-                    hintText: "رمز عبور خود را وارد کنید",
+                    hintText: "...رمز عبور خود را وارد کنید",
                     enabledBorder:
                         UnderlineInputBorder(borderSide: BorderSide.none),
                     contentPadding: EdgeInsets.symmetric(horizontal: 22),
