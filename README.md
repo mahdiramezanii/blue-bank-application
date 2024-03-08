@@ -4,4 +4,4 @@ A new Flutter project.
 
 ## Getting Started
 
-<img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" with=200>
+<img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200">
