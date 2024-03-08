@@ -224,25 +224,53 @@ class HomeScrean extends StatelessWidget {
               delegate: SliverChildBuilderDelegate(childCount: 10,
                   (BuildContext context, int index) {
                 return Container(
+                  margin: EdgeInsets.only(bottom: 15),
                   color: Colors.white,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Row(
-                        children: [
-                          Text("ریال"),
-                          Text(" 1,300,00"),
-                        ],
+                      Container(
+                        color: Color.fromARGB(255, 146, 235, 149),
+                        child: Row(
+                          children: [
+                            Text("ریال"),
+                            Text(" 1,300,00"),
+                          ],
+                        ),
                       ),
                       Row(
                         children: [
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              Text("دریافت از کارت"),
-                              Text("جمعه، 18 اسفند 1402 18:32:21")
+                              Text(
+                                "دریافت از کارت",
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 22),
+                              ),
+                              Text(
+                                "جمعه، 18 اسفند 1402 18:32:21",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
                             ],
                           ),
-                          Icon(Icons.interests_rounded)
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Container(
+                            width: 50,
+                            height: 50,
+                            decoration: BoxDecoration(
+                                color: Color.fromRGBO(197, 197, 197, 0.4),
+                                borderRadius: BorderRadius.circular(100)),
+                            child: Icon(
+                              Icons.interests_rounded,
+                              color: Colors.green,
+                            ),
+                          )
                         ],
                       )
                     ],
