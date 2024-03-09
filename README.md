@@ -2,50 +2,40 @@
 
 A new Flutter project.
 
-## Getting Started
-
-<style>
-
-    .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-    .row {
-  display: flex;
-}
-
-.column {
-  flex: 33.33%;
-  padding: 5px;
-}
-
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
-    </style>
-
 <!-- <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200"> -->
 
+<div align="center">
+<img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png"align="center" width="200" />
 
- <div class="row">
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200" alt="Forest" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200" alt="Mountains" style="width:100%">
-  </div>
-</div> 
+<img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" align="center" height="" width="200" />
+</div>  
+  
+<br/>  
+
+## Skills
+
+
+<table><tr><td valign="top" width="33%">
+
+
+
+### Client App  
+<div align="center">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/flutterio-icon.svg" alt="Flutter" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/dartlang-icon.svg" alt="Dart" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/firebase.png" alt="Firebase" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/adobexd.png" alt="Adobe XD" height="50" />  
+</div>
+
+</td><td valign="top" width="33%">
+
+
+
+### Backend  
+<div align="center">  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/php-original.svg" alt="PHP" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" />  
+</div>
+ </table>  
+
+<br/>  
