@@ -4,11 +4,17 @@ A new Flutter project.
 
 ## Getting Started
 
-<img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200">
+<!-- <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200"> -->
 
 
- <div class="grid-container">
-  <div class="grid-item"><img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200"></div>
-  <div class="grid-item"><img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200"></div>
-
+ <div class="row">
+  <div class="column">
+    <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" alt="Mountains" style="width:100%">
+  </div>
 </div> 
