@@ -4,6 +4,37 @@ A new Flutter project.
 
 ## Getting Started
 
+<style>
+
+    .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    .row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+    </style>
+
 <!-- <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200"> -->
 
 
