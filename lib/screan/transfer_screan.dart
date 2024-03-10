@@ -115,8 +115,9 @@ class TransferScrean extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(100),
+                            image: DecorationImage(image: AssetImage("assets/images/avatar.png"),fit: BoxFit.cover )
                           ),
-                          child: Image(image: AssetImage("assets/images/avatar.png")),
+                         
                         ),
                       ],
                     ),

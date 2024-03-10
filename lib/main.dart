@@ -1,3 +1,4 @@
+import 'package:blue_bank_application/screan/activity_screan.dart';
 import 'package:blue_bank_application/screan/login_screan.dart';
 import 'package:blue_bank_application/screan/transfer_screan.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TransferScrean(),
+      home: ActivityScrean(),
     );
   }
 }
