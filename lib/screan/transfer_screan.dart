@@ -116,6 +116,7 @@ class TransferScrean extends StatelessWidget {
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(100),
                           ),
+                          child: Image(image: AssetImage("assets/images/avatar.png")),
                         ),
                       ],
                     ),
@@ -147,7 +148,7 @@ class TransferScrean extends StatelessWidget {
               ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  
+
                     backgroundColor: Colors.blue, minimumSize: Size(160, 52)),
                     
                 onPressed: () {},
