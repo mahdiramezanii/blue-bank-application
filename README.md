@@ -2,13 +2,15 @@
 
 A new Flutter project.
 
-<!-- <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png" width="200"> -->
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme.png"align="center" width="200" />
 
 <img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme2.png" align="center" height="" width="200" />
+
+<img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme3.png"align="center" width="200" />
 </div>  
+
   
 <br/>  
 
