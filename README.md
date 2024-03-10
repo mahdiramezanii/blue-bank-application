@@ -12,10 +12,7 @@ A new Flutter project.
 
 </div> 
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/mahdiramazani/blue-bank-application/main/assets/images/readme3.png" align="center" width="200" />
 
-</div> 
 
   
 <br/>  
