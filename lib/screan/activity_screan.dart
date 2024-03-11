@@ -91,32 +91,174 @@ class ActivityScrean extends StatelessWidget {
               ),
             ),
             SliverPadding(
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-              sliver: SliverGrid(
-              
-              delegate: SliverChildBuilderDelegate(
-
-                (context, index) {
-                  return Container(
-                    height: 30,
-                    width: 50,
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(15),
+              padding: EdgeInsets.symmetric(horizontal: 23, vertical: 5),
+              sliver: SliverToBoxAdapter(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 70,
+                          width: 70,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: Icon(Icons.work_history,size: 50,color: Colors.white,),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "برگشت پول",
+                          textAlign: TextAlign.end,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.w600),
+                        ),
+                      ],
                     ),
-                  );
-                },
-                childCount: 6,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 70,
+                          width: 70,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: Icon(Icons.receipt_long,size: 50,color: Colors.white,),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "قبض",
+                          textAlign: TextAlign.end,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 70,
+                          width: 70,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: Icon(Icons.network_check,color: Colors.white,size: 50,),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "اینترنت",
+                          textAlign: TextAlign.end,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 70,
+                          width: 70,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                             child: Icon(Icons.charging_station_sharp,color: Colors.white,size: 50,),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "شارژ",
+                          textAlign: TextAlign.end,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            ),
+            SliverPadding(
+              padding: EdgeInsets.symmetric(horizontal: 32, vertical: 5),
+              sliver: SliverToBoxAdapter(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
 
-                crossAxisCount: 4,
-                mainAxisSpacing: 2,
-                crossAxisSpacing: 3,
+                    Spacer(),
+
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 70,
+                          width: 70,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: Icon(Icons.auto_awesome,color: Colors.white,size: 50,),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "پرداخت خودکار",
+                          textAlign: TextAlign.end,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    // SizedBox(width: 5,),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 70,
+                          width: 70,
+                          decoration: BoxDecoration(
+                            color: Colors.green[900],
+                            borderRadius: BorderRadius.circular(15),
+                          ),
+                          child: Icon(Icons.paid,size: 50,color: Colors.white,),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "وام",
+                          textAlign: TextAlign.end,
+                          textDirection: TextDirection.ltr,
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                    
+                  ],
+                ),
               ),
             ),
-            ),
-          
           ],
         ),
       ),
