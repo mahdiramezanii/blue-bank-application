@@ -77,30 +77,46 @@ class ActivityScrean extends StatelessWidget {
         }),
         body: CustomScrollView(
           slivers: [
-            SliverToBoxAdapter(
-              child: Container(
-                width: 370,
-                height: 100,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadiusDirectional.circular(20),
+            SliverPadding(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+              sliver: SliverToBoxAdapter(
+                child: Container(
+                  width: 370,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadiusDirectional.circular(20),
+                  ),
                 ),
               ),
             ),
-            SliverGrid(
-              delegate: SliverChildBuilderDelegate((context, index) {
-                return Container(
-                  height: 65,
-                  width: 65,
-                  decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                );
-              }),
+            SliverPadding(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+              sliver: SliverGrid(
+              
+              delegate: SliverChildBuilderDelegate(
+
+                (context, index) {
+                  return Container(
+                    height: 30,
+                    width: 50,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  );
+                },
+                childCount: 6,
+              ),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, mainAxisSpacing: 2, crossAxisSpacing: 3),
-            )
+
+                crossAxisCount: 4,
+                mainAxisSpacing: 2,
+                crossAxisSpacing: 3,
+              ),
+            ),
+            ),
+          
           ],
         ),
       ),
