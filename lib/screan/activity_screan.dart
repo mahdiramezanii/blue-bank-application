@@ -80,13 +80,12 @@ class ActivityScrean extends StatelessWidget {
             SliverPadding(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
               sliver: SliverToBoxAdapter(
-                child: Container(
-                  width: 370,
-                  height: 100,
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadiusDirectional.circular(20),
-                  ),
+                child: Stack(
+                  children: [
+                    StackContent().elementAt(0),
+                    StackContent().elementAt(1),
+
+                  ],
                 ),
               ),
             ),
@@ -106,7 +105,11 @@ class ActivityScrean extends StatelessWidget {
                             color: Colors.red,
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          child: Icon(Icons.work_history,size: 50,color: Colors.white,),
+                          child: Icon(
+                            Icons.work_history,
+                            size: 50,
+                            color: Colors.white,
+                          ),
                         ),
                         SizedBox(
                           height: 10,
@@ -130,7 +133,11 @@ class ActivityScrean extends StatelessWidget {
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          child: Icon(Icons.receipt_long,size: 50,color: Colors.white,),
+                          child: Icon(
+                            Icons.receipt_long,
+                            size: 50,
+                            color: Colors.white,
+                          ),
                         ),
                         SizedBox(
                           height: 10,
@@ -154,7 +161,11 @@ class ActivityScrean extends StatelessWidget {
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          child: Icon(Icons.network_check,color: Colors.white,size: 50,),
+                          child: Icon(
+                            Icons.network_check,
+                            color: Colors.white,
+                            size: 50,
+                          ),
                         ),
                         SizedBox(
                           height: 10,
@@ -178,7 +189,11 @@ class ActivityScrean extends StatelessWidget {
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(15),
                           ),
-                             child: Icon(Icons.charging_station_sharp,color: Colors.white,size: 50,),
+                          child: Icon(
+                            Icons.charging_station_sharp,
+                            color: Colors.white,
+                            size: 50,
+                          ),
                         ),
                         SizedBox(
                           height: 10,
@@ -202,7 +217,6 @@ class ActivityScrean extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-
                     Spacer(),
 
                     Column(
@@ -215,7 +229,11 @@ class ActivityScrean extends StatelessWidget {
                             color: Colors.blue,
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          child: Icon(Icons.auto_awesome,color: Colors.white,size: 50,),
+                          child: Icon(
+                            Icons.auto_awesome,
+                            color: Colors.white,
+                            size: 50,
+                          ),
                         ),
                         SizedBox(
                           height: 10,
@@ -240,7 +258,11 @@ class ActivityScrean extends StatelessWidget {
                             color: Colors.green[900],
                             borderRadius: BorderRadius.circular(15),
                           ),
-                          child: Icon(Icons.paid,size: 50,color: Colors.white,),
+                          child: Icon(
+                            Icons.paid,
+                            size: 50,
+                            color: Colors.white,
+                          ),
                         ),
                         SizedBox(
                           height: 10,
@@ -254,7 +276,6 @@ class ActivityScrean extends StatelessWidget {
                         ),
                       ],
                     ),
-                    
                   ],
                 ),
               ),
@@ -263,6 +284,27 @@ class ActivityScrean extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  List<Widget> StackContent() {
+    return [
+      Container(
+        width: 370,
+        height: 110,
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadiusDirectional.circular(20),
+        ),
+      ),
+      Container(
+        width: 370,
+        height: 100,
+        decoration: BoxDecoration(
+          color: Color.fromARGB(255, 141, 17, 8),
+          borderRadius: BorderRadiusDirectional.circular(20),
+        ),
+      ),
+    ];
   }
 }
 

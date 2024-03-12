@@ -1,4 +1,5 @@
 import 'package:blue_bank_application/screan/activity_screan.dart';
+import 'package:blue_bank_application/screan/cart_screan.dart';
 import 'package:blue_bank_application/screan/login_screan.dart';
 import 'package:blue_bank_application/screan/transfer_screan.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         Locale('fr'), 
       ],
       debugShowCheckedModeBanner: false,
-      home: ActivityScrean(),
+      home: CartScrean(),
     );
   }
 }
